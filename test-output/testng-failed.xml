@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="pomPolicyBazaarNewTC.PB_TC1234Useing_Listener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="pomPolicyBazaarNewTC.PB_TC1234_validatePolicyUserName">
+        <methods>
+          <include name="signInPolicyBazaar"/>
+          <include name="LaunchPolicyBazaar"/>
+          <include name="closePolicyBrowser"/>
+          <include name="validateUserName"/>
+          <include name="logoutFromPolicyBazaar"/>
+        </methods>
+      </class> <!-- pomPolicyBazaarNewTC.PB_TC1234_validatePolicyUserName -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

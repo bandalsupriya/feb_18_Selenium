@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+		
+		<!-- 1000(totalTC)->50run(we want) (950->disable)->how to disable->we use include and exclude
+	    just include that TC we want
+        1000->950run->50(I don’t want)we just exclude 50TC-->
+      <class name="testNGXML.TestNGMethod">
+		  <methods><!-- suppose we want only odd number TC-->
+			  <include name="method1"></include>
+			  <include name="method3"></include>
+			  <include name="method5"></include>
+			  
+		  </methods>
+		  </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
